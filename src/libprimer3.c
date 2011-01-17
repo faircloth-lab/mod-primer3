@@ -74,7 +74,7 @@ namespace std
 #define OPTIMIZE_OK_REGIONS 1
 
 #ifndef MAX_PRIMER_LENGTH
-#define MAX_PRIMER_LENGTH 36
+#define MAX_PRIMER_LENGTH 55
 #endif
 #if (MAX_PRIMER_LENGTH > DPAL_MAX_ALIGN)
 #error "MAX_PRIMER_LENGTH must be <= DPAL_MAX_ALIGN"
@@ -82,9 +82,10 @@ namespace std
 #if (MAX_PRIMER_LENGTH > THAL_MAX_ALIGN)
 # error "MAX_PRIMER_LENGTH must be <= THAL_MAX_ALIGN"
 #endif
-#define MAX_NN_TM_LENGTH 36 /* The maxium length for which to use the
+#define MAX_NN_TM_LENGTH 55 /* The maxium length for which to use the
                                nearest neighbor model when calculating
-                               oligo Tms. */
+                               oligo Tms.  Updated to 55 - do NOT
+			       trust!! */
 
 #define MACRO_CAT_2(A,B) A##B
 #define MACRO_VALUE_AS_STRING(A) MACRO_STRING(A)
