@@ -70,13 +70,13 @@ LDFLAGS = -g
 LIBOPTS =
 
 ifeq ($(TESTOPTS),--windows)
-	PRIMER_EXE      = primer3_core.exe
+	PRIMER_EXE      = primer3_long.exe
 	NTDPAL_EXE	= ntdpal.exe
 	NTTHAL_EXE	= ntthal.exe
 	OLIGOTM_EXE	= oligotm.exe
 	LONG_SEQ_EXE	= long_seq_tm_test.exe
 else
-	PRIMER_EXE      = primer3_core
+	PRIMER_EXE      = primer3_long
 	NTDPAL_EXE	= ntdpal
 	NTTHAL_EXE	= ntthal
 	OLIGOTM_EXE	= oligotm
